@@ -15,3 +15,23 @@
 //     const tAreaSpan = document.getElementById('T-area');
 //     tAreaSpan.innerText = area;
 // }
+
+function calculateTriangleArea() {
+    const base = getInputValueById('T-base');
+    console.log('base ', base);
+    const height = getInputValueById('T-hight');
+    console.log('height ', height)
+
+    const area = 0.5 * base * height;
+    console.log('The Area of the Triangle is:', area);
+
+    setInnerTextById('T-area', area);
+}
+
+function displayTriangleArea() {
+    // your calculation logic here
+    const area = calculateTriangleArea(); // replace with your actual calculation function
+
+    // display the result in the result section
+    displayResult("Triangle", area);
+}
