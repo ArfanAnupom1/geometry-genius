@@ -92,38 +92,35 @@
                             <p class="text-2xl">Area : <span id="Rh-area"></span><span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions ">
-                            <button onclick="calculateRhombusArea()"
-                                class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- card ---5-->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <figure><img src="images/pentagon.png" alt="Pentagon" /></figure>
                     <div class="card-body text-center">
                         <h2 class="">Pentagon</h2>
-                        <p class="text-2xl">Area (A) = 0.5 X p X b</p>
-                        <Div>
-                            <input id="pentagon-p" class="w-24 text-2xl p-2 rounded-lg" type="text" placeholder="p">
+                        <p class="text-2xl">Area (A) = 1/4 * √(5 * (5 + 2 * √5)) * s^2</p>
+                        <div>
+                            <input id="pentagon-s" class="w-24 text-2xl p-2 rounded-lg" type="text" placeholder="s">
                             <span class="mr-4 ml-2">cm</span>
-                            <input id="pentagon-b" class="w-24 text-2xl p-2 rounded-lg" type="text" placeholder="b">
-                            <span class="mr-4 ml-2">cm</span>
-                        </Div>
+                        </div>
                         <div>
                             <p class="text-2xl">Area : <span id="pentagon-area"></span><span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions ">
-                            <button onclick="calculatePentagonArea()"
-                                class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- card ---6 -->
-                <div class="card w-96 bg-base-100 shadow-xl mb-10 ">
+                <div class="card w-96 bg-base-100 shadow-xl  ">
                     <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+
                     <div class="card-body text-center">
                         <h2 class="">Ellipsem</h2>
-                        <p class="text-2xl">Area (A) = a X p</p>
+                        <p class="text-2xl">Area (A) = π X a X p</p>
                         <Div>
                             <input id="Ellipsem-a" class="w-24 text-2xl p-2 rounded-lg" type="text" placeholder="a">
                             <span class="mr-4 ml-2">cm</span>
@@ -134,14 +131,13 @@
                             <p class="text-2xl">Area : <span id="Ellipsem-area"></span><span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions ">
-                            <button onclick="calculateEllipsemArea()"
-                                class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateEllipsemArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w-96 border-2 border-gray-700 rounded-lg" id="result-section">
-                <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+                <h3 class="text-3xl text-center p-4 ">Area Calculation</h3>
             </div>
         </div>
         <script src="js/triangle.js"></script>
