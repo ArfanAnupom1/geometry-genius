@@ -28,10 +28,3 @@ function calculateTriangleArea() {
     setInnerTextById('T-area', area);
 }
 
-function displayTriangleArea() {
-    // your calculation logic here
-    const area = calculateTriangleArea(); // replace with your actual calculation function
-
-    // display the result in the result section
-    displayResult("Triangle", area);
-}

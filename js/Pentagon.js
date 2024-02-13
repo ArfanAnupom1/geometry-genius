@@ -1,11 +1,9 @@
-function calculatePentagonArea(){
-    const p = getInputValueById('pentagon-p');
-    console.log('base ', p);
-    const b = getInputValueById('pentagon-b');
-    console.log('hight ', b)
+function calculatePentagonArea() {
+    const s = getInputValueById('pentagon-s'); // Assuming 's' is the length of one side
+    console.log('side ', s);
 
-    const pentagonArea = 0.5 * p * b;
-    console.log('The Area of the pentagon is :', pentagonArea);
+    const pentagonArea = (1 / 4) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(s, 2);
+    console.log('The Area of the pentagon is:', pentagonArea);
 
     setInnerTextById('pentagon-area', pentagonArea);
 }
